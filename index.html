@@ -4,10 +4,25 @@ title: my site
 ---
 
 <div id="home">
-  <h1>posts</h1>
+ 
+  
+  <table>
+ <tr>
+  <td> <h1>posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-  </ul>
+  </ul></td>
+  <td> <h1>posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul></td>
+ </tr>
+\
+</table> 
+
+
 </div>
