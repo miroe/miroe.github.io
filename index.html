@@ -8,13 +8,13 @@ title: my site
   
   <table >
  <tr>
-     <td style="padding: 50px;"> <h1>posts</h1>
+     <td > <h1>posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul></td>
-     <td style="padding: 50px;"> <h1>posts</h1>
+     <td style="padding: 15px;"> <h1>posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
